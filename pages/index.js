@@ -3,8 +3,14 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Avatar from '@material-ui/core/Avatar';
 
+
 export default function Home() {
 
+  const links = [
+    { label: 'Linkedin', url: 'https://www.linkedin.com/in/luigimoretti' },
+    { label: 'Instagram', url: 'http://instagram.com/luigi.moretti' },
+    { label: 'Facebook', url: 'https://www.facebook.com/luigivinicius.moretti' },
+  ]
 
   return (
     <div className="root">
@@ -24,21 +30,17 @@ export default function Home() {
               Luigi Moretti
               </Typography>
           </Grid>
-          <Grid item xs>
-            <Button variant="contained" color="primary" href="https://www.linkedin.com/in/luigimoretti" target="_blank" fullWidth>
-              Linkedin
-              </Button>
-          </Grid>
-          <Grid item xs>
-            <Button variant="contained" color="primary" href="http://instagram.com/luigi.moretti" target="_blank" fullWidth>
-              Instagram
-              </Button>
-          </Grid>
-          <Grid item xs>
-            <Button variant="contained" color="primary" href="https://www.facebook.com/luigivinicius.moretti" target="_blank" fullWidth>
-              Facebook
-              </Button>
-          </Grid>
+          {
+            links.map((link, indice) => {
+              return (
+                <Grid item xs key={indice}>
+                  <Button variant="contained" color="primary" href={link.url} target="_blank" fullWidth>
+                    {link.label}
+                  </Button>
+                </Grid>
+              )
+            })
+          }
         </Grid>
       </Grid>
     </div>
