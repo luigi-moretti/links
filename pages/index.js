@@ -1,7 +1,11 @@
-import { Grid, Button, Typography } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import Avatar from '@material-ui/core/Avatar';
 
 export default function Home() {
-  
+
+
   return (
     <div className="root">
       <Grid
@@ -12,29 +16,29 @@ export default function Home() {
         className="fullHeight"
       >
         <Grid item container direction="column" spacing={2} xs={10} sm={4}>
-            <Grid item>
-              <img alt="perfil" src="/vercel.svg" />
-            </Grid>
-            <Grid>
-              <Typography align="center">
-                Luigi Moretti
+          <Grid item>
+            <Avatar alt="perfil" src="/perfil.webp" />
+          </Grid>
+          <Grid item>
+            <Typography align="center">
+              Luigi Moretti
               </Typography>
-            </Grid>
-            <Grid item xs>
-              <Button variant="contained" color="primary" fullWidth>
-                Linkedin
+          </Grid>
+          <Grid item xs>
+            <Button variant="contained" color="primary" href="https://www.linkedin.com/in/luigimoretti" target="_blank" fullWidth>
+              Linkedin
               </Button>
-            </Grid>
-            <Grid item xs>
-              <Button variant="contained" color="primary" fullWidth>
-                Linkedin
+          </Grid>
+          <Grid item xs>
+            <Button variant="contained" color="primary" href="http://instagram.com/luigi.moretti" target="_blank" fullWidth>
+              Instagram
               </Button>
-            </Grid>
-            <Grid item xs>
-              <Button variant="contained" color="primary" fullWidth>
-                Linkedin
+          </Grid>
+          <Grid item xs>
+            <Button variant="contained" color="primary" href="https://www.facebook.com/luigivinicius.moretti" target="_blank" fullWidth>
+              Facebook
               </Button>
-            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </div>
