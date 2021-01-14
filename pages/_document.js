@@ -8,6 +8,24 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
+          {/* Global site tag (gtag.js) - Google Analytics */}
+          <script
+             async src="https://www.googletagmanager.com/gtag/js?id=G-Y13LJXYGWX"
+          />
+           <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                  
+                    gtag('config', 'G-Y13LJXYGWX');
+                  `,
+              }}
+            />
+
+
+
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link
