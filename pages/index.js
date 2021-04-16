@@ -10,6 +10,7 @@ export default function Home() {
     { label: 'Linkedin', url: 'https://www.linkedin.com/in/luigimoretti' },
     { label: 'Instagram', url: 'http://instagram.com/luigi.moretti' },
     { label: 'Facebook', url: 'https://www.facebook.com/luigivinicius.moretti' },
+    { label: 'Classificação de Robson', url: 'https://www.classificacaorobson.com/' },
   ]
 
   return (
