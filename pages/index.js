@@ -11,6 +11,7 @@ export default function Home() {
     { label: 'Instagram', url: 'http://instagram.com/luigi.moretti' },
     { label: 'Facebook', url: 'https://www.facebook.com/luigivinicius.moretti' },
     { label: 'Classificação de Robson', url: 'https://www.classificacaorobson.com/' },
+    { label: 'Busca Repositórios GitHub', url: 'https://github-list.luigimoretti.dev/' },
   ]
 
   return (
